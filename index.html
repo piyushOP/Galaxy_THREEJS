@@ -13,7 +13,6 @@
 
  import * as THREE from 'https://unpkg.com/three@0.127.0/build/three.module.js';
 import { OrbitControls } from 'https://unpkg.com/three@0.127.0/examples/jsm/controls/OrbitControls.js';
-// import * as dat from "https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js";
 import { Mesh } from 'https://unpkg.com/three@0.127.0/build/three.module.js';
 
 
@@ -72,7 +71,7 @@ const saturnringcolor = textureLoader.load('./static//galaxy/saturn/saturnringco
 
 
 const uranusColor = textureLoader.load('./static//galaxy/uranus/uranusmap.jpg');
-const uranusringcolor = textureLoader.load('./static//galaxy/uranus/uranusringcolour.jpg');
+const uranusringcolor = textureLoader.load('./static/galaxy/uranus/uranusringcolour.jpg');
 
 
 
@@ -363,7 +362,7 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
 
 const clock = new THREE.Clock();
-
+gui.close();
 
 console.time('renderer')
 
