@@ -10,9 +10,6 @@
 
 # production
 /build
-/static/shadowTexture
-/static/textures
-/static/galaxy
 
 # misc
 .DS_Store
